@@ -14,7 +14,7 @@ document.getElementById("regBtn").addEventListener("click",function(){
     let password2 = document.getElementById("password2").value;
     let terms = document.getElementById("terminos").checked;
 
-    let todoCompleto = nombre !== "" && nombre !== "apellido" && email !== "" && password1 !== "" && password2 !== "" ;
+    let todoCompleto = nombre !== "" && apellido !== "" && email !== "" && password1 !== "" && password2 !== "" ;
     let largo = password1.length >= 6;
     let iguales = password1 === password2;
 
