@@ -12,13 +12,13 @@ document.getElementById("regBtn").addEventListener("click",function(){
     let email = document.getElementById("email").value.trim();
     let password1 = document.getElementById("password1").value;
     let password2 = document.getElementById("password2").value;
-    let terms = document.getElementById("terms").checked;
+    let terms = document.getElementById("terminos").checked;
 
-    let todoComplet0 = nombre !== "" && nombre !== "apellido" && email !== "" && password1 !== "" && password2 !== "" ;
+    let todoCompleto = nombre !== "" && nombre !== "apellido" && email !== "" && password1 !== "" && password2 !== "" ;
     let largo = password1.length >= 6;
     let iguales = password1 === password2;
 
-    if (todoComplet0 && largo && iguales && terms) {
+    if (todoCompleto && largo && iguales && terms) {
         showAlertSuccess();
     }
     else{
