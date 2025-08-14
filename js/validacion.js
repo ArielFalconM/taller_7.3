@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 function showAlertSuccess() {
     document.getElementById("alert-success").classList.add("show");
 }
@@ -24,4 +26,5 @@ document.getElementById("regBtn").addEventListener("click",function(){
     else{
         showAlertError();
     }
+})
 })
